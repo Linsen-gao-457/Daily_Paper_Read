@@ -1,4 +1,18 @@
-abstract and its conclusion:
+##### Table of contents
+
+- [Hopfield Network](#hopfield-network)
+- [Abstract and Conclusion](#abstract-and-its-conclusion)
+- [General Content-Addressable Memory of a Physical System](#the-general-content-addressable-memory-of-a-physical-system)
+- [The Model System](#the-model-system)
+- [Information Storage Algorithm](#the-information-storage-algorithm)
+- [Biological Interpretation of the Model](#the-biological-interpretation-of-the-model)
+- [Study of the Collective Behaviors of the Model](#study-of-the-collective-behaciors-of-the-model)
+- [Why Do We Need Clipped Version?](#why-do-we-need-clipped-version)
+
+# Hopfield Network
+📕 [paper link](https://pmc.ncbi.nlm.nih.gov/articles/PMC346238/)
+
+# abstract and its conclusion:
 Computational properties of neural netwrok.
 
 **spntaneous** collective sonsequence of having a large number of interacting simple consequence
@@ -53,4 +67,3 @@ Engineering motivation(Si-basedd contentt addressable memory)
 
  [+1, +1, -1] (time window)
 
- 
