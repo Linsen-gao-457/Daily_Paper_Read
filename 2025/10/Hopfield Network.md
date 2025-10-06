@@ -3,11 +3,11 @@
 📕 [paper link](https://pmc.ncbi.nlm.nih.gov/articles/PMC346238/)
 
 Hopfield Network is a information storage system which have 3 functions:
-1. (Write)Store information
+1. [(Write)Store information](#write-function)
 
-2. (Read)Retrive Information
+2. [(Read)Retrieve Information](#read-function)
 
-3. (State evolution)
+3. [(State evolution)](#stable-evolution)
 
 
 The instaneous state of the system is a Vector $V = (V_1, V_2, V_3, ...)$, for each $V_i \in V$ is a neuron with 2 states $V_i \in \{0, 1\}$. The neuron i adjust its state follow the rule below: 
@@ -54,7 +54,7 @@ $$H^{s'}_j = \sum _j T_{ij} V_j^{s'} = \sum_s (2V_i^s -1)[\sum_jV_j ^{s'}(2V_j^s
 
 If $V^s == V^{s'}$, $H_i^{s'} \approx (2V_i ^{s'} * \frac N 2)$. else 0
 
-# Stable Evolution
+## Stable Evolution
 
 **Consider the special case $T_{ij} = T_{ji}$**, we define the energy function $$E = \frac 1 2 \sum \sum _ {i\neq j} T_{ij} V_i V_j\tag{4}$$
 
@@ -96,10 +96,12 @@ How do we get that the network can store only about 0.15N patterns.
 $$H_i^s = \sum _{j\neq i} T_{ij}V_j^s =\underbrace{ \sum _{s' =1}^n V_i^{s'}V_j^{s'}V_j^s}_{T_{ij} =V_i^{s'}V_j^{s'}} = \underbrace{V_i^s \sum _{i\neq j} V_i^s (V_j^s)^2}_{\text{signal term when s = s'}}+\underbrace {\sum_{s' \neq s} V_i^{s'}V_j^{s'}V_j^s}_{\text{noise when s}\neq \text{s'}} \tag7$$
 signal term: $H_i^s = V_i^s * \frac 1 2N$
 
+**Stochastical process**
+
 We find the mean and standard derivation of noise term: $\sigma = \sqrt{(n-1)N/2}$, $\mu = 0$
 We want $\frac N 2 > \sigma$, solve this function we get $n <0.15$.
 
-# Read Function
+## Read Function
 
 The inputs should be appropriately coded.
 
